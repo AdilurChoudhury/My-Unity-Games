@@ -36,13 +36,20 @@ public class PlayerControls : MonoBehaviour
             //The bird will float up on the Y axis and float back down on Y axis
             rb.velocity = Vector2.up * velocity;
         }
+        OutOfBounds();
     }
 
     private void OnCollisionEnter2D(Collision2D collision) 
     {
-        birdSprite = gameObject.GetComponent("bird") as Rigidbody2D;
-        if (collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" || birdSprite.position.y <= -10) {
+        if (collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike") {
             GameObject.Find("GameController").GetComponent<GameController>().GameOver();
         }
     } 
+    private void OutOfBounds()
+    {
+        birdSprite = GameObject.Find("Bird").GetComponent<Rigidbody2D>();
+        if (birdSprite.position.y <= -8) {
+            GameObject.Find("GameController").GetComponent<GameController>().GameOver();
+        }
+    }
 }
