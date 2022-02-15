@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [Header("ChallengeObj Game Object")]
-    public GameObject challengeObject;
+    [Header("ChallengeObj Game Objects")]
+    public GameObject[] challengeObject;
 
     [Header("Default Spawn Delay Time")]
-    public float spawnDelay = 1f;
+    public float spawnDelay = 4f;
 
     [Header("Default Spawn Time")]
-    public float spawnTime = 2f;
+    public float spawnTime = 5f;
     void Start()
     {
         InvokeRepeating("InstantiateObjects", spawnDelay, spawnTime);
@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
     }
 
     void InstantiateObjects() {
-        Instantiate(challengeObject, transform.position, transform.rotation);
+        int randomSpawn = (int) Mathf.Round(Random.Range(0, challengeObject.Length - 1));
+        Instantiate(challengeObject[randomSpawn], transform.position, transform.rotation);
     }
 }

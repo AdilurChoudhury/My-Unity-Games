@@ -712,7 +712,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e9a8003d0b1934bb71b4f8eaa6b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  challengeObject: {fileID: 1741266680155636381, guid: cec2edcbd4f5cfc49833698111a5a94d, type: 3}
+  challengeObject:
+  - {fileID: 1741266680155636381, guid: cec2edcbd4f5cfc49833698111a5a94d, type: 3}
+  - {fileID: 2547941923986330364, guid: 4852b3d858517b144898468ac284c316, type: 3}
+  - {fileID: 975153319274701840, guid: 9f99a244511481041ab57f33de04aca4, type: 3}
   spawnDelay: 1
   spawnTime: 2
 --- !u!4 &1839973116
