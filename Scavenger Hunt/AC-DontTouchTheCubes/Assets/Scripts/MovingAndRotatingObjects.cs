@@ -6,10 +6,10 @@ public class MovingAndRotatingObjects : MonoBehaviour
 {
     [Header("Default Movement Speed")]
     //Default moving speed
-    public float moveSpeed = 10f;
+    public float moveSpeed = 15f;
 
     [Header("Default Rotation Speed")]
-    public float rotateSpeed = 50f;
+    public float rotateSpeed = 75f;
 
     // Update is called once per frame
     void Update()
