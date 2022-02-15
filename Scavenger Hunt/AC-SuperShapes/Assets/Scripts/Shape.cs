@@ -8,12 +8,12 @@ public class Shape : MonoBehaviour
     public Rigidbody2D rb;
     //Shrinking speed
     [Header("Default Shrinking Speed")]
-    public float shrinkSpeed = 3f;
+    public float shrinkSpeed = 1f;
 
     void Start()
     {
         //Rotation of rigidbody at random range
-        rb.rotation = Random.Range(0f, 360f);
+        rb.rotation = Random.Range(0f, 520f);
         //Local scale for hexagon
         transform.localScale = Vector3.one * 10f;
 

@@ -259,7 +259,7 @@ MonoBehaviour:
   - {fileID: 3600819354773241567, guid: b9974bbe1181ab348968ea07c769aa47, type: 3}
   - {fileID: 3417114003247287460, guid: e9a3ccafa5cb3c243b896ab583de24d7, type: 3}
   - {fileID: 5608908145742263239, guid: a7a20bb749b744044bb235ea1e406d4b, type: 3}
-  spawnDelay: 2
+  spawnDelay: 1
   spawnTime: 3
   gameOverCanvas: {fileID: 452255587}
 --- !u!4 &462445123
