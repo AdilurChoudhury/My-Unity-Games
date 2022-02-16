@@ -49,6 +49,8 @@ public class GameController : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             NewBlock();
         }
+        text.color = Color.HSVToRGB((Level / 100f) % 1f, 1f, 1f);
+        text.text = "Level: " + Level;
     }
 
     void NewBlock() {
