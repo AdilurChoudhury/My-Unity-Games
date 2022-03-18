@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExplosionClear : MonoBehaviour
 {
     private ParticleSystem particleSmoke;
-    public void Awake() 
+    private void Awake() 
     {
         particleSmoke = gameObject.GetComponentInChildren<ParticleSystem>();
     }

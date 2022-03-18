@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
             if (!gameStarted)
             {
                 Destroy(bombObject);
-            } else if (bombObject.transform.position.y < (-screenBounds.y) - 12 || !gameStarted)
+            } else if (bombObject.transform.position.y < (-screenBounds.y))
             {
                 scoreSystem.GetComponent<Score>().AddScore(pointsWorth);
                 scoreText.color = Color.green;
@@ -84,7 +84,6 @@ public class GameManager : MonoBehaviour
     {
         spawner.active = false;
         gameStarted = false;
-
         Invoke("SplashScreen", 2f);
     }
 
